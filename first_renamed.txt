@@ -81,3 +81,20 @@ git restore --staged first_renamed.txt (to unstage)
 git checkout -- first_renamed.txt (to get the previos version of first_renamed.txt)
 
 git checkout -f (to get previos commit and loose present working dir)
+
+git remote add origin https://github.com/Swastik-Chakravorty/LearningGit.git (adding with github)
+
+git remote (to check the remote)
+
+git remote -v
+
+(add ssh key by reffering ssh key github search)
+
+ ssh-keygen -t ed25519 -C "swastik.chakravorty@gmail.com" (to generate ssh key)
+
+eval "$(ssh-agent -s)" (to see pid)
+
+tail ~/.ssh/id_ed25519.pub (to view ssh key) ---(then add the ssh key to github & login as
+it come on your way)
+
+git push -u origin master (to push git repository into github)
