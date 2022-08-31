@@ -1,0 +1,83 @@
+Full git commands....
+
+git config --global user.name "Swastik"
+
+git config --global user.email "ctt.help@gmail.com"
+
+git config user.name
+
+git config user.email
+
+git status
+
+git init
+
+git add --a
+
+git commit -m "initial commit"
+
+git log
+
+git add First.txt
+
+git commit -m "Changed First.txt and added better design"
+
+git add --a
+
+git commit -m "This is modified msexcel"
+
+git status
+
+git log
+
+rm -rf .git (<-- To delete all the content in a git depository)
+
+git clone URL my choosen name
+
+pwd (Present working directory)
+
+ls (list the folder in the directory)
+
+cd tensorflow/ (get into the folder tensorflow)
+
+touch error.log
+
+touch .gitignore (to ignore files & folders)
+
+git diff (compare between working area & staging area)
+
+git diff --staged (compare staging area vs past commits)
+
+git commit -a -m "all tracked files staged and commited directly" (but the untracked
+files can not commit directly, they have to be staged)
+
+git rm third.txt (rm used for deletion)
+
+git commit -m "removed bad file third.txt"
+
+git mv First.txt first_renamed.txt (mv used to rename files)
+
+git rm --cached db.accdb (to untrack the db.accdb file; now i can ignore db.accdb file)
+
+git log -p (this comment shows what removed and what added)
+
+git log -p -3(shows details of 3 commits)
+
+git log --stat (shows short details of commits)
+
+git log --pretty=oneline (one line details of commits)
+
+git log --pretty=short (short details of commits)
+
+git log --since=2.days (2 days details of commit)
+
+git log --pretty=format:"%h --%an"  ("search for: git scm useful options for git log format")
+
+git commit --amend (to amendment of previous commit --> press "i" to edit, then "esc", then
+ ":wq", then press "enter")
+
+git restore --staged first_renamed.txt (to unstage)
+
+git checkout -- first_renamed.txt (to get the previos version of first_renamed.txt)
+
+git checkout -f (to get previos commit and loose present working dir)
